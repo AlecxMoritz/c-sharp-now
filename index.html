@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JAVASCRIPT NOW</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+TC" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/animate.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="animated slideInLeft">
+    <h1 id="brand">
+        <em>JAVASCRIPT NOW</em>
+    </h1>
+    <nav>
+        <ul id="navLinks">
+            <li><a href="/" class="navLink"><em>HOME</em></a>
+            </li>
+            <li>
+                <a href="#functions" class="navLink"><em>FUNCTIONS</em></a>
+            </li>
+            <li>
+                <a href="#objects"  class="navLink"><em>OBJECTS</em></a>
+            </li>
+            <li>
+                <a href="#arrays"  class="navLink"><em>ARRAYS</em></a>
+            </li>
+        </ul>
+    </nav>
+    <hr class="titleBar" />
+</header>
+    <sidebar id="sidebarWrapper" >
+        <h3>EDITOR'S PICKS</h3>
+        <div id="sidebarLinks">
+            <h6 class="sidebarTitle">JavaScript Help</h6>
+            <ul class="sidebarList">
+                <li>
+                    <a class="sidebarLink" target="_blank" href="https://developer.mozilla.org/en-US/">Mdn docs</a>
+                </li>
+                <li><a target="_blank" href="https://www.w3schools.com/js/default.asp" class="sidebarLink">w3 schools</a></li>
+                <li><a target="_blank" href="https://stackoverflow.com/" class="sidebarLink">stack overflow</a></li>
+                <li><a target="_blank" href="https://jsfiddle.net/" class="sidebarLink">js fiddle</a></li>
+            </ul>
+            <h6 class="sidebarTitle">Front-End Libraries</h6>
+            <ul class="sidebarList">
+                <li><a target="_blank" href="https://safi.me.uk/typewriterjs/" class="sidebarLink">typewriter.js</a></li>
+                <li><a target="_blank" href="https://daneden.github.io/animate.css/" class="sidebarLink">animate.css</a></li>
+                <li><a target="_blank" href="http://animejs.com/" class="sidebarLink">anime.js</a></li>
+                <li><a target="_blank" href="https://nosir.github.io/cleave.js/" class="sidebarLink">cleave.js</a></li>
+            </ul>
+        </div>
+    </sidebar>
+    <div id="blurb" class="animated">
+        <p>
+            <em>JAVASCRIPT NOW</em> hopes to help beginner front end developers learn the JavaScript concepts they need, and to
+            pick up additional JavaScript based front-end tricks along the way.</p>
+    </div>
+    <section id="infoContent">
+        <article class="infoBox">
+            <a id="functions"></a>
+            <h2>Functions</h2>
+            <div class="codeBlock">
+                <pre><code><var class="functionKey">function</var> <span class="functionName">addNums</span>(numOne, numTwo) {
+        <span class="keyword">return</span> numOne + numTwo;
+    }
+
+console.<span class="method">log</span>(addNums(<span class="param">2</span>, <span class="param">2</span>));</code></pre>
+            </div>
+            <p>
+                Functions are chunks of functionality we declare for later use. Like in this example we have created an <em>addNums()</em> function, to take two numbers and return the sum of those numbers to us. <var>numOne</var>, and <var>numTwo</var> are <dfn>parameters</dfn>, meaning they are variables that will only exist inside the scope of the function, and they will assist us the logic we need to perform. Since those variables are contained in the functions scope, when the function finishes it's execution, those variables are destroyed.
+            </p>
+        </article>
+        <article class="infoBox">
+            <a id="objects"></a>
+            <h2>Objects</h2>
+            <div class="codeBlock">
+                <pre><code><var>let</var> <span class="varName">cat</span> = {
+                    <span class="key">name</span>: <span class="stringValue">'Quin'</span>,
+                    <span class="key">breed</span>: <span class="stringValue">'tortoiseshell'</span>,
+                    <span class="key">age</span>: <span class="numValue">5</span>,
+                    <span class="key">isCute</span>: <span class="boolValue">true</span>,
+                }</code></pre>
+            </div>
+            <p>
+                In the simplest of terms, an object is a collection of properties. A <dfn>property</dfn> is a key to value relationship. Like name, and the string 'Quin'. The cat object has a <em>property</em> with a <em>key</em> name, that has the <em>value</em> of 'Quin'. Objects properties can have a value of any data type, even another object! Objects are very popular in holding together lots of varried, but related data, and they come with many build in methods for working with them. The MDN docs will have more information for you!
+            </p>
+        </article>
+        <article class="infoBox">
+            <a id="arrays"></a>
+            <h2>Arrays</h2>
+            <div class="codeBlock">
+                <pre><code>
+<var>let</var> <span class="varName">instructors</span> = [ <span class="stringValue">'Autumn'</span>, <span class="stringValue">'Dave'</span>', <span class="stringValue">'Alecx'</span> ];
+    
+console.<span class="method">log</span>(instructors[<span class="numValue">2</span>]);</code></pre>
+            </div>
+            <p>
+                An array in JavaScript as actually a very special object! Arrays take data of any type, but they have no keys. Instead, to access that information again, we use <em>array indexing</em>. Where we assume the first position in the array is the <em>0 index</em>, and each item onward increments by one. Arrays also some with a lot of special methods that we can use on them. The MDN docs have lots of helpful information on arrays too!
+            </p>
+        </article>
+    </section>
+    <footer>
+        <p>Made with💗by Alecx Moritz</p>
+        <p> &copy; AMDevs and ElevenFifty Academy</p>
+    </footer>
+</body>
+
+</html>
