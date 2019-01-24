@@ -150,41 +150,17 @@ footer {
 }
 
 code {
-    color: rgb(204, 204, 204);
+    color: rgb(247, 247, 247);
 }
 
-.functionKey {
-    color: rgb(166, 89, 255)
+.blueCode {
+    color: rgb(64, 131, 255)
 }
 
-.functionName {
-    color: rgb(102, 155, 255)
+.greenCode {
+    color: rgb(0, 207, 128);
 }
 
-.param {
-    color: orange
-}
-
-.keyword {
-    color: rgb(209, 5, 209);
-}
-
-.method {
-    color: lightskyblue
-}
-
-.key {
-    color: rgb(101, 209, 101);
-}
-
-.stringValue {
-    color: rgb(101, 209, 101);
-}
-
-.boolValue {
-    color: rgb(255, 26, 255)
-}
-
-.numValue {
-    color: orange
+.string {
+    color: rgb(255, 169, 89)
 }

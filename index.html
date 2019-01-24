@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JAVASCRIPT NOW</title>
+    <title>C# NOW</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+TC" rel="stylesheet">
     <link rel="stylesheet" href="./lib/animate.css">
     <link rel="stylesheet" href="styles.css">
@@ -14,20 +14,20 @@
 <body>
     <header class="animated slideInLeft">
     <h1 id="brand">
-        <em>JAVASCRIPT NOW</em>
+        <em>C# NOW</em>
     </h1>
     <nav>
         <ul id="navLinks">
             <li><a href="/" class="navLink"><em>HOME</em></a>
             </li>
             <li>
-                <a href="#functions" class="navLink"><em>FUNCTIONS</em></a>
+                <a href="#methods" class="navLink"><em>METHODS</em></a>
             </li>
             <li>
-                <a href="#objects"  class="navLink"><em>OBJECTS</em></a>
+                <a href="#classes"  class="navLink"><em>CLASSES</em></a>
             </li>
             <li>
-                <a href="#arrays"  class="navLink"><em>ARRAYS</em></a>
+                <a href="#lists"  class="navLink"><em>LISTS</em></a>
             </li>
         </ul>
     </nav>
@@ -36,70 +36,82 @@
     <sidebar id="sidebarWrapper" >
         <h3>EDITOR'S PICKS</h3>
         <div id="sidebarLinks">
-            <h6 class="sidebarTitle">JavaScript Help</h6>
+            <h6 class="sidebarTitle">C# Help</h6>
             <ul class="sidebarList">
                 <li>
-                    <a class="sidebarLink" target="_blank" href="https://developer.mozilla.org/en-US/">Mdn docs</a>
+                    <a class="sidebarLink" target="_blank" href="https://docs.microsoft.com/en-us/dotnet/csharp/">microsoft C# Docs</a>
                 </li>
-                <li><a target="_blank" href="https://www.w3schools.com/js/default.asp" class="sidebarLink">w3 schools</a></li>
-                <li><a target="_blank" href="https://stackoverflow.com/" class="sidebarLink">stack overflow</a></li>
-                <li><a target="_blank" href="https://jsfiddle.net/" class="sidebarLink">js fiddle</a></li>
+                <li><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/" class="sidebarLink">microsoft c# reference</a></li>
+                <li><a target="_blank" href="https://www.dotnetperls.com/" class="sidebarLink">.net perls</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/user/programmingwithmosh" class="sidebarLink">mosh on youtube</a></li>
             </ul>
-            <h6 class="sidebarTitle">Front-End Libraries</h6>
+            <h6 class="sidebarTitle">.NET Resources</h6>
             <ul class="sidebarList">
-                <li><a target="_blank" href="https://safi.me.uk/typewriterjs/" class="sidebarLink">typewriter.js</a></li>
-                <li><a target="_blank" href="https://daneden.github.io/animate.css/" class="sidebarLink">animate.css</a></li>
-                <li><a target="_blank" href="http://animejs.com/" class="sidebarLink">anime.js</a></li>
-                <li><a target="_blank" href="https://nosir.github.io/cleave.js/" class="sidebarLink">cleave.js</a></li>
+                <li><a target="_blank" href="https://docs.microsoft.com/en-us/aspnet/" class="sidebarLink">asp.net</a></li>
+                <li><a target="_blank" href="https://docs.microsoft.com/en-us/ef/" class="sidebarLink">entity framework</a></li>
+                <li><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/index" class="sidebarLink">linq</a></li>
+                <li><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/standard/" class="sidebarLink">microsoft .net guide</a></li>
             </ul>
         </div>
     </sidebar>
     <div id="blurb" class="animated">
         <p>
-            <em>JAVASCRIPT NOW</em> hopes to help beginner front end developers learn the JavaScript concepts they need, and to
-            pick up additional JavaScript based front-end tricks along the way.</p>
+            <em>C# NOW</em> hopes to help beginner .NET and C# developers learn the concepts they need, and to
+            pick up additional C# and .NET tricks and know-how along the way.</p>
     </div>
     <section id="infoContent">
         <article class="infoBox">
-            <a id="functions"></a>
-            <h2>Functions</h2>
-            <div class="codeBlock">
-                <pre><code><var class="functionKey">function</var> <span class="functionName">addNums</span>(numOne, numTwo) {
-        <span class="keyword">return</span> numOne + numTwo;
-    }
-
-console.<span class="method">log</span>(addNums(<span class="param">2</span>, <span class="param">2</span>));</code></pre>
-            </div>
-            <p>
-                Functions are chunks of functionality we declare for later use. Like in this example we have created an <em>addNums()</em> function, to take two numbers and return the sum of those numbers to us. <var>numOne</var>, and <var>numTwo</var> are <dfn>parameters</dfn>, meaning they are variables that will only exist inside the scope of the function, and they will assist us with the logic we need to perform. Since those variables are contained in the functions scope, when the function finishes it's execution, those variables are destroyed.
-            </p>
-        </article>
-        <article class="infoBox">
-            <a id="objects"></a>
-            <h2>Objects</h2>
-            <div class="codeBlock">
-                <pre><code><var>let</var> <span class="varName">cat</span> = {
-                    <span class="key">name</span>: <span class="stringValue">'Quin'</span>,
-                    <span class="key">breed</span>: <span class="stringValue">'tortoiseshell'</span>,
-                    <span class="key">age</span>: <span class="numValue">5</span>,
-                    <span class="key">isCute</span>: <span class="boolValue">true</span>,
-                }</code></pre>
-            </div>
-            <p>
-                In the simplest of terms, an object is a collection of properties. A <dfn>property</dfn> is a key to value relationship. Like name, and the string 'Quin'. The cat object has a <em>property</em> with a <em>key</em> of 'name', that has the <em>value</em> of 'Quin'. Objects properties can have a value of any data type, even another object! Objects are very popular in holding together lots of varied, but related data, and they come with many built in methods for working with them. The MDN docs will have more information for you!
-            </p>
-        </article>
-        <article class="infoBox">
-            <a id="arrays"></a>
-            <h2>Arrays</h2>
+            <a id="methods"></a>
+            <h2>Methods</h2>
             <div class="codeBlock">
                 <pre><code>
-<var>let</var> <span class="varName">instructors</span> = [ <span class="stringValue">'Autumn'</span>, <span class="stringValue">'Dave'</span>', <span class="stringValue">'Alecx'</span> ];
-    
-console.<span class="method">log</span>(instructors[<span class="numValue">2</span>]);</code></pre>
+    <span class="blueCode">int</span> addNums(<span class="blueCode">int</span> numOne, <span class="blueCode">int</span> numTwo)
+    {
+        <span class="blueCode">return</span> numOne + numTwo;
+    }
+        </code></pre>
             </div>
             <p>
-                An array in JavaScript as actually a very special object! Arrays take data of any type, but they have no keys. Instead, to access that information again, we use <em>array indexing</em>. Where we assume the first position in the array is the <em>0 index</em>, and each item onward increments by one. Arrays also come with a lot of special methods that we can use on them. The MDN docs have lots of helpful information on arrays too!
+                <em>Methods</em>, sometimes referred to as <em>class members</em>, are chunks of reusable code. In C#, they exist within our classes to give us functionality we can call off our objects to get some sort of desired effect. They are capable of taking in data as <em>parameters</em>, and can also <em>return</em> data back out of them. In their simplest forms, methods are really just collections of statements, executed in a series, that we can reuse whenever needed throughout our programs.
+            </p>
+        </article>
+        <article class="infoBox">
+            <a id="classes"></a>
+            <h2>Classes</h2>
+            <div class="codeBlock">
+                <pre><code>
+    <span class="blueCode">class</span> <span class="greenCode">Cat</span> 
+    {
+        <span class="blueCode">public int</span> Age { <span class="blueCode">get</span>; <span class="blueCode">set</span>; }
+        <span class="blueCode">public string</span> Name { <span class="blueCode">get</span>; <span class="blueCode">set</span>; }
+        <span class="blueCode">public bool</span> IsCute { <span class="blueCode">get</span>; <span class="blueCode">set</span>; }
+
+        <span class="blueCode">static string</span> Meow()
+        {
+            <span class="blueCode">return</span> <span class="string">"Meow"</span>;
+        }
+    }
+                </code></pre>
+            </div>
+            <p>
+                A <em>class</em> is a kind of blueprint for objects containing both <em>methods</em>, and <em>properties</em>. They decide what kind of data our objects with have with <em>properties</em>, and lay out what kind of actions our objects can take with <em>methods</em>. Each object constructed from a class will have the same properties and methods available, but they may have different <em>values</em> contained in those properties.
+            </p>
+        </article>
+        <article class="infoBox">
+            <a id="lists"></a>
+            <h2>Lists</h2>
+            <div class="codeBlock">
+                <pre><code>
+    <span class="greenCode">List</span>&lt;<span class="greenCode">Cat</span>&gt; catList = <span class="blueCode">new</span> <span class="greenCode">List</span>&lt;<span class="greenCode">Cat</span>&gt;();
+    <span class="greenCode">Cat</span> quin = <span class="blueCode">new</span> <span class="greenCode">Cat</span>();
+    <span class="greenCode">Cat</span> snowball = <span class="blueCode">new</span> <span class="greenCode">Cat</span>();
+
+    catList.Add(quin);
+    catList.Add(snowball);
+                </code></pre>
+            </div>
+            <p>
+                C# has many different types of collections, but a very important one is the <em>List<></em>. A <em>List<></em> is really just a list of values of the same data type, that you can continue to add to as need be through prebuild methods of the <em>List<></em> class. Remember that these collections have a generic type by default, and require us to give them a type in between the angle brackets. We can even use classes we define as types of <em>List<></em>!
             </p>
         </article>
     </section>
